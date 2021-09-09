@@ -20,13 +20,7 @@ const VaccinationStatusReports = connection.sequelize.define('VaccinationStatusR
         empl_loc: {
             type: DataTypes.STRING
         },
-        pat_empl_cat: {
-            type: DataTypes.STRING
-        },
         div_name: {
-            type: DataTypes.STRING
-        },
-        div_cd: {
             type: DataTypes.STRING
         },
         hrp_dept_name: {
