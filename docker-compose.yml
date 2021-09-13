@@ -1,0 +1,16 @@
+version: '3'
+services: 
+  app:
+    container_name: vaccination-status-project
+    restart: always
+    build: .
+    ports: 
+      - '3000:3000'
+    links: 
+      - postgres
+  db:
+    container_name: postgres
+    image: postgres
+    environment: ./config/dev.env
+    ports: 
+      - '5432:5432'
