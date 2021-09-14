@@ -6,10 +6,3 @@ services:
     build: .
     ports: 
       - '3000:3000'
-    links: 
-      - db
-  db:
-    container_name: postgres
-    image: postgres
-    ports: 
-      - '5432:5432'
